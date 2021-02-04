@@ -7,11 +7,7 @@
     <string name="send_friend_request">Send friend request</string>
     <string name="cancel">Cancel</string>
     <string name="title">Title:</string>
-    <string name="description">Description:</string>
-    <string name="friends">Friends:</string>
     <string name="single_person_cost_of_trip">Single person cost of trip:</string>
-    <string name="location">Location:</string>
-    <string name="date">Date:</string>
     <string name="add_trip">Add trip</string>
     <string name="cost_of_trip">Cost of trip:</string>
     <string name="friend">Friend</string>
@@ -32,7 +28,6 @@
     <string name="trip_details">Trip details</string>
     <string name="trip_budget">Trip budget</string>
     <string name="accept">Accept</string>
-    <string name="friend_requests">Friend requests</string>
     <string name="user">User</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
