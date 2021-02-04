@@ -16,7 +16,7 @@
             android:id="@+id/txtFriendsUsername"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="User"
+            android:text="@string/user"
             android:textSize="24dp"
             android:textColor="@color/black"
             android:layout_marginLeft="5px"

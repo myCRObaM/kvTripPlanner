@@ -57,9 +57,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
 
         btnLoginButton = view.findViewById(R.id.btnLogin);
         btnLoginButton.setOnClickListener(this::onClick);
-
-        btnForgotPassword = view.findViewById(R.id.txtForgotPassword);
-        btnForgotPassword.setOnClickListener(this::onClick);
     }
 
     private void loginButtonPressed()
@@ -91,10 +88,6 @@ public class LoginFragment extends Fragment implements View.OnClickListener{
         else if (view.getId() == R.id.btnLogin)
         {
             loginButtonPressed();
-        }
-        else if (view.getId() == R.id.txtForgotPassword)
-        {
-            LoginModuleNavigator.getInstance().loginDoneInterface.loginDone();
         }
     }
 }

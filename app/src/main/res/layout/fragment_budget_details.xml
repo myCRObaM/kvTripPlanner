@@ -13,7 +13,7 @@
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Cost of trip: "
+        android:text="@string/cost_of_trip"
         />
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -37,7 +37,7 @@
         android:id="@+id/txtBudgetFriend"
         android:layout_width="0px"
         android:layout_height="wrap_content"
-        android:text="Friend"
+        android:text="@string/friend"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toLeftOf="@+id/clPayed"/>
@@ -66,7 +66,7 @@
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toLeftOf="@+id/txtBudgetDidPay"
-                android:text="Amount to pay"/>
+                android:text="@string/amount_to_pay"/>
 
             <View
                 android:id="@+id/border"
@@ -85,7 +85,7 @@
                 app:layout_constraintLeft_toRightOf="@+id/txtBudgetToPay"
                 app:layout_constraintTop_toTopOf="parent"
                 app:layout_constraintRight_toRightOf="parent"
-                android:text="   Paid"
+                android:text="@string/paid"
                 />
 
 
@@ -130,7 +130,7 @@
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toLeftOf="@+id/txtItemAddedBy"
-            android:text="Item"
+            android:text="@string/item"
             />
 
 
@@ -150,7 +150,7 @@
             app:layout_constraintLeft_toRightOf="@+id/txtItemBudget"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="@+id/txtItemPrice"
-            android:text="Added by"
+            android:text="@string/added_by"
             />
 
         <View
@@ -169,7 +169,7 @@
             app:layout_constraintLeft_toRightOf="@+id/txtItemAddedBy"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            android:text="Price"
+            android:text="@string/price"
             />
 
         <androidx.recyclerview.widget.RecyclerView
@@ -190,7 +190,7 @@
         android:id="@+id/btnAddNewTripExpense"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="New trip expense"
+        android:text="@string/new_trip_expense"
         android:layout_marginBottom="15px"
         android:layout_marginRight="15px"
         app:layout_constraintTop_toBottomOf="@+id/clBudgetPlans"

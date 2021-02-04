@@ -46,7 +46,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="5dp"
         android:textAlignment="viewStart"
-        android:text="Title: "
+        android:text="@string/title"
         app:layout_constraintTop_toBottomOf="@+id/imgNewTrip"
         />
 
@@ -72,7 +72,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="5dp"
         android:textAlignment="viewStart"
-        android:text="Description: "
+        android:text="@string/description"
         app:layout_constraintTop_toBottomOf="@+id/inptTitle"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -97,7 +97,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="5dp"
         android:textAlignment="viewStart"
-        android:text="Friends: "
+        android:text="@string/friends"
         app:layout_constraintTop_toBottomOf="@+id/inptDesc"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -123,7 +123,7 @@
         android:layout_marginTop="8dp"
         android:layout_marginRight="5dp"
         android:textAlignment="viewStart"
-        android:text="Single person cost of trip: "
+        android:text="@string/single_person_cost_of_trip"
         app:layout_constraintTop_toBottomOf="@+id/inptFriendsForTrip"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"/>
@@ -148,7 +148,7 @@
             android:layout_marginTop="8dp"
             android:layout_marginRight="5dp"
             android:textAlignment="viewStart"
-            android:text="Location: "
+            android:text="@string/location"
             app:layout_constraintTop_toBottomOf="@+id/inptBudget"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"/>
@@ -173,7 +173,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginRight="5dp"
                 android:textAlignment="viewStart"
-                android:text="Date: "
+                android:text="@string/date"
                 app:layout_constraintTop_toBottomOf="@+id/inptLokacija"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintRight_toRightOf="parent"/>
@@ -204,6 +204,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
-        android:text="Add trip"/>
+        android:text="@string/add_trip"/>
 
 </androidx.constraintlayout.widget.ConstraintLayout>

@@ -2,5 +2,37 @@
     <string name="app_name">kvTripPlanner</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="friends_email">Friends email:</string>
+    <string name="email">email</string>
+    <string name="send_friend_request">Send friend request</string>
+    <string name="cancel">Cancel</string>
+    <string name="title">Title:</string>
+    <string name="description">Description:</string>
+    <string name="friends">Friends:</string>
+    <string name="single_person_cost_of_trip">Single person cost of trip:</string>
+    <string name="location">Location:</string>
+    <string name="date">Date:</string>
+    <string name="add_trip">Add trip</string>
+    <string name="cost_of_trip">Cost of trip:</string>
+    <string name="friend">Friend</string>
+    <string name="amount_to_pay">Amount to pay</string>
+    <string name="paid">Paid</string>
+    <string name="item">Item</string>
+    <string name="added_by">Added by</string>
+    <string name="price">Price</string>
+    <string name="new_trip_expense">New trip expense</string>
+    <string name="friends_name">Friends name</string>
+    <string name="friend_requests">Friend requests</string>
+    <string name="description">Description:</string>
+    <string name="location">Location:</string>
+    <string name="date">Date:</string>
+    <string name="friends">Friends:</string>
+    <string name="save">Save</string>
+    <string name="delete">Delete</string>
+    <string name="trip_details">Trip details</string>
+    <string name="trip_budget">Trip budget</string>
+    <string name="accept">Accept</string>
+    <string name="friend_requests">Friend requests</string>
+    <string name="user">User</string>
     <!-- TODO: Remove or change this placeholder text -->
 </resources>
