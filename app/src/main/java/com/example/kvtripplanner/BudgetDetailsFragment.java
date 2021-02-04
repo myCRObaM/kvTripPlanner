@@ -14,6 +14,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.PopupWindow;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import com.example.kvtripplanner.Adapter.BudgetFriendDidPayAdapter;
 import com.example.kvtripplanner.Adapter.BudgetTripExpensesAdapter;
@@ -87,7 +88,6 @@ public class BudgetDetailsFragment extends Fragment implements View.OnClickListe
         String sExpenseName = inptExpenseName.getText().toString();
         String sExpenseValue = inptExpenseValue.getText().toString();
         Boolean canSave = true;
-
         if (sExpenseName.isEmpty())
         {
             inptExpenseName.setError("Please write an expense name!");
@@ -202,9 +202,16 @@ public class BudgetDetailsFragment extends Fragment implements View.OnClickListe
 
     @Override
     public void didPressPay(String id) {
-        DatabaseReference msRef = FirebaseDatabase.getInstance().getReference("Trips").child(oTrip.getId().toString()).child("friends");
-        msRef.child(id).child("did_pay").setValue(!oTrip.getFriends().get(Integer.parseInt(id)).did_pay);
-        oTrip.getFriends().get(Integer.parseInt(id)).did_pay = !oTrip.getFriends().get(Integer.parseInt(id)).did_pay;
-        setupData();
+        if (UserSingleton.getInstance().getoCurrentUser().id.equals(oTrip.getHost()))
+        {
+            DatabaseReference msRef = FirebaseDatabase.getInstance().getReference("Trips").child(oTrip.getId().toString()).child("friends");
+            msRef.child(id).child("did_pay").setValue(!oTrip.getFriends().get(Integer.parseInt(id)).did_pay);
+            oTrip.getFriends().get(Integer.parseInt(id)).did_pay = !oTrip.getFriends().get(Integer.parseInt(id)).did_pay;
+            setupData();
+        }
+        else
+        {
+            Toast.makeText(getContext(), "Only trip host can change that", Toast.LENGTH_LONG).show();
+        }
     }
 }
