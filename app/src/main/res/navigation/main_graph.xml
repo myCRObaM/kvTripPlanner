@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_screen_menu"
+    app:startDestination="@id/mainScreenFragment">
+
+    <fragment
+        android:id="@+id/mainScreenFragment"
+        android:name="com.example.kvtripplanner.MainScreenFragment"
+        android:label="fragment_main_screen"
+        tools:layout="@layout/fragment_main_screen" >
+        <action
+            android:id="@+id/action_mainScreenFragment_to_tripSingleFragment"
+            app:destination="@id/tripSingleFragment" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_addNewTrip"
+            app:destination="@id/addNewTrip" />
+        <action
+            android:id="@+id/action_mainScreenFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/tripSingleFragment"
+        android:name="com.example.kvtripplanner.TripSingleFragment"
+        android:label="fragment_trip_single"
+        tools:layout="@layout/fragment_trip_single" >
+        <action
+            android:id="@+id/action_tripSingleFragment_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNewTrip"
+        android:name="com.example.kvtripplanner.AddNewTrip"
+        android:label="fragment_add_new_trip"
+        tools:layout="@layout/fragment_add_new_trip" >
+        <action
+            android:id="@+id/action_addNewTrip_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+        <action
+            android:id="@+id/action_addNewTrip_to_friendsFragment"
+            app:destination="@id/friendsFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/friendsFragment"
+        android:name="com.example.kvtripplanner.FriendsFragment"
+        android:label="fragment_friends"
+        tools:layout="@layout/fragment_friends" >
+        <action
+            android:id="@+id/action_friendsFragment_to_mainScreenFragment"
+            app:destination="@id/mainScreenFragment" />
+    </fragment>
+</navigation>

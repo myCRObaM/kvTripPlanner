@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TripSingleFragment">
+
+    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/imgTrip"
+        android:layout_width="match_parent"
+        android:layout_height="600px"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/overTopLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:background="@drawable/rounded_layout_bg"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="500px"
+        app:layout_constraintTop_toTopOf="@+id/imgTrip"
+        >
+
+
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnTripDetails"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_button_top_left_rounded"
+            android:text="Trip details"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toLeftOf="@+id/overTopLayout"
+            app:layout_constraintTop_toTopOf="@+id/overTopLayout"
+            app:layout_constraintRight_toLeftOf="@+id/border"/>
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/btnBudgetDetails"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            android:background="@drawable/image_button_top_right_corner_rounded"
+            android:text="Trip budget"
+            android:backgroundTint="@color/white"
+            app:layout_constraintLeft_toRightOf="@+id/border"
+            app:layout_constraintRight_toRightOf="@+id/overTopLayout"
+            app:layout_constraintTop_toTopOf="@+id/overTopLayout" />
+
+        <View
+            android:id="@+id/border"
+            android:layout_width="1dp"
+            android:layout_height="0px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="@+id/overTopLayout"
+            app:layout_constraintBottom_toBottomOf="@id/btnTripDetails"
+            app:layout_constraintLeft_toRightOf="@+id/btnTripDetails"
+            app:layout_constraintRight_toLeftOf="@+id/btnBudgetDetails"/>
+
+        <androidx.viewpager2.widget.ViewPager2
+            android:id="@+id/viewPagerForDetails"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_constraintTop_toBottomOf="@+id/btnTripDetails"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

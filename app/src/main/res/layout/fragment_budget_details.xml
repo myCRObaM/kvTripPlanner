@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".TripDetailsFragment">
+
+    <TextView
+        android:id="@+id/txtWholeCostOfTrip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:text="Cost of trip: "
+        />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clFriendDidPay"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtWholeCostOfTrip"
+        app:layout_constraintBottom_toTopOf="@+id/clBudgetPlans">
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+    <TextView
+        android:id="@+id/txtBudgetFriend"
+        android:layout_width="0px"
+        android:layout_height="wrap_content"
+        android:text="Friend"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/clPayed"/>
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/clPayed"
+            app:layout_constraintLeft_toRightOf="@+id/txtBudgetFriend"
+            app:layout_constraintRight_toLeftOf="@+id/clPayed"/>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/clPayed"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="@+id/txtBudgetFriend"
+            app:layout_constraintRight_toRightOf="parent">
+
+            <TextView
+                android:id="@+id/txtBudgetToPay"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toLeftOf="@+id/txtBudgetDidPay"
+                android:text="Amount to pay"/>
+
+            <View
+                android:id="@+id/border"
+                android:layout_width="1dp"
+                android:layout_height="0px"
+                android:background="@android:color/darker_gray"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintLeft_toRightOf="@+id/txtBudgetToPay"
+                app:layout_constraintRight_toLeftOf="@+id/txtBudgetDidPay"/>
+
+            <TextView
+                android:id="@+id/txtBudgetDidPay"
+                android:layout_width="0px"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@+id/txtBudgetToPay"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                android:text="   Paid"
+                />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvFriendDidPay"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_constraintTop_toBottomOf="@+id/clPayed"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/clBudgetPlans"
+        android:layout_width="match_parent"
+        android:layout_height="0px"
+        app:layout_constraintTop_toBottomOf="@+id/clFriendDidPay"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/btnAddNewTripExpense"
+        android:layout_marginBottom="15px"
+        >
+
+        <View
+            android:layout_width="0px"
+            android:layout_height="1px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"/>
+
+        <TextView
+            android:id="@+id/txtItemBudget"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toLeftOf="@+id/txtItemAddedBy"
+            android:text="Item"
+            />
+
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/txtItemPrice"
+            app:layout_constraintLeft_toRightOf="@+id/txtItemBudget"
+            app:layout_constraintRight_toLeftOf="@+id/txtItemAddedBy"/>
+
+        <TextView
+            android:id="@+id/txtItemAddedBy"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/txtItemBudget"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="@+id/txtItemPrice"
+            android:text="Added by"
+            />
+
+        <View
+            android:layout_width="1dp"
+            android:layout_height="0px"
+            android:background="@android:color/darker_gray"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toBottomOf="@+id/txtItemPrice"
+            app:layout_constraintLeft_toRightOf="@+id/txtItemAddedBy"
+            app:layout_constraintRight_toLeftOf="@+id/txtItemPrice"/>
+
+        <TextView
+            android:id="@+id/txtItemPrice"
+            android:layout_width="0px"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@+id/txtItemAddedBy"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:text="Price"
+            />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/rvExpensesList"
+            android:layout_width="match_parent"
+            android:layout_height="0px"
+            app:layout_constraintTop_toBottomOf="@+id/txtItemPrice"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnAddNewTripExpense"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="New trip expense"
+        android:layout_marginBottom="15px"
+        android:layout_marginRight="15px"
+        app:layout_constraintTop_toBottomOf="@+id/clBudgetPlans"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+
+
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

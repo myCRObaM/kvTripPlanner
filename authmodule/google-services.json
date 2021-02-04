@@ -1,0 +1,69 @@
+{
+  "project_info": {
+    "project_number": "316873256293",
+    "firebase_url": "https://kvtripplanner-default-rtdb.firebaseio.com",
+    "project_id": "kvtripplanner",
+    "storage_bucket": "kvtripplanner.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316873256293:android:be4c04e1217af9fabb058c",
+        "android_client_info": {
+          "package_name": "com.example.authmodule"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316873256293-b4a0td18nmtadj39ivfu843t2l9lo6ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXg4nAGlV4d6vnu9N4Od5huY7fsHmJa0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316873256293-b4a0td18nmtadj39ivfu843t2l9lo6ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    },
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:316873256293:android:173b252b11d8b1d7bb058c",
+        "android_client_info": {
+          "package_name": "com.example.kvtripplanner"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "316873256293-b4a0td18nmtadj39ivfu843t2l9lo6ov.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAXg4nAGlV4d6vnu9N4Od5huY7fsHmJa0c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "316873256293-b4a0td18nmtadj39ivfu843t2l9lo6ov.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/popup_bg"
+    android:padding="20dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintBottom_toTopOf="@+id/inptFriendsMail"
+        android:textColor="@color/white"
+        android:text="Friends email:"/>
+
+    <EditText
+        android:id="@+id/inptFriendsMail"
+        android:layout_width="0px"
+        android:hint="email"
+        android:textColor="@color/white"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <TextView
+        android:layout_width="0px"
+        android:id="@+id/errorTextView"
+        android:layout_height="wrap_content"
+        android:textColor="@color/white"
+        app:layout_constraintTop_toBottomOf="@+id/inptFriendsMail"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"/>
+
+    <Button
+        android:id="@+id/btnSendRequest"
+        android:layout_marginLeft="9dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Send friend request"
+        app:layout_constraintLeft_toRightOf="@+id/btnCancelRequest"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/errorTextView" />
+
+    <Button
+        android:id="@+id/btnCancelRequest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@+id/btnSendRequest"
+        app:layout_constraintTop_toBottomOf="@+id/errorTextView" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
