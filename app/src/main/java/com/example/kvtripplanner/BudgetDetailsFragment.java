@@ -211,7 +211,7 @@ public class BudgetDetailsFragment extends Fragment implements View.OnClickListe
         }
         else
         {
-            Toast.makeText(getContext(), "Only trip host can change that", Toast.LENGTH_LONG).show();
+            Toast.makeText(getContext(), "Only trip host can change that", Toast.LENGTH_SHORT).show();
         }
     }
 }
